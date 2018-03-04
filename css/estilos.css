@@ -1,0 +1,210 @@
+html {
+    animation: backgroundAnim 200s infinite;
+    animation-timing-function: linear;
+    background-position-y: 50%;
+    background-size: auto 100%;
+    background: black url('../img/background_fijo.jpg') repeat fixed;
+    height: 100%;
+    width: 100%;
+
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    -khtml-user-select: none; /* Konqueror HTML */
+}
+
+/* Elementos de juego */
+div#juego, img#bkgrd, canvas#mainframe, canvas#backframe, div#overscreen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: none;
+}
+
+div.withCursor {
+    cursor: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* Fondo, frame de juego, overscreen */
+img#bkgrd {
+    z-index: 100;
+}
+
+canvas#backframe {
+    z-index: 101;
+}
+
+canvas#mainframe {
+    z-index: 102;
+}
+
+div#overscreen {
+    z-index: 103;
+}
+
+/* The animation code */
+@keyframes backgroundAnim {
+    from {
+        background-position-x: 0;
+    }
+    to {
+        background-position-x: 2627px;
+    }
+}
+
+.card {
+    background-color: rgba(30, 18, 90, 0.8) !important;
+    border: 2px solid #EEE;
+    box-shadow: 0 0 10px #4b2d91, 0 0 10px #4b2d91;
+}
+
+svg {
+    display: inline-block;
+    vertical-align: middle;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+}
+
+.center {
+    text-align: center
+}
+
+.card-text {
+    font-size: 1.3em
+}
+
+.btn {
+    box-shadow: 0 0 5px #4b2d91;
+}
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    border-bottom: 2px solid #eee;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+h1, h2, h3, h4 {
+    font-family: orbitron, sans-serif;
+}
+
+h4.card-title {
+    margin-bottom: 0
+}
+
+body {
+    font-family: Raleway, arial, sans-serif;
+    background: inherit;
+    margin: 3em;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 101px;
+    letter-spacing: 5px;
+    margin-bottom: 0.5em;
+    text-shadow: 0 0 10px #6f42c1, 0 0 10px #6f42c1;
+}
+
+table.players {
+    height: 7em;
+    margin-bottom: 1.5em;
+}
+
+table.players td{
+    padding-right: 1em;
+}
+
+table.players rect {
+    cursor: pointer;
+}
+
+.restart-card {
+    width: 40%;
+    top: 40%;
+    left: 30%;
+}
+
+#mute {
+    position: fixed;
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 1.5rem;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    background-color: rgba(30, 18, 90, 0.95) !important;
+    border: 2px solid #EEE;
+    box-shadow: 0 0 10px #4b2d91, 0 0 10px #4b2d91;
+    padding: 0;
+    cursor: pointer;
+}
+
+#goCredits {
+    position: fixed;
+    left: 1rem;
+    bottom: 1rem;
+    color: white;
+    border-radius: 0.5rem;
+    height: 3rem;
+    text-align: center;
+    background-color: rgba(30, 18, 90, 0.95) !important;
+    border: 2px solid #EEE;
+    box-shadow: 0 0 10px #4b2d91, 0 0 10px #4b2d91;
+    padding: 0 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    color: #9942fb;
+}
+
+.btn-primary:hover, #mut:hover, #goCredits:hover, .btn-outline-primary:hover {
+    color: #fff;
+    background-color: rgba(111, 66, 193, 0.5) !important;
+    border-color: rgb(30, 18, 90);
+}
+
+#sonido {
+    display: none
+}
+
+.key {
+    border-bottom: 2px solid #EEEEEE;
+    padding-bottom: 2px;
+}
+
+/* Pantallas medianas */
+@media (max-width: 767px) {
+    h1 {
+        font-size: 70px
+    }
+}
+
+/* Pantallas enanas */
+@media (max-width: 575px) {
+    h1 {
+        font-size: 2.5rem
+    }
+
+    h4 {
+        font-size: 1.5rem
+    }
+
+    body {
+        margin: 1em
+    }
+}
