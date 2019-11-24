@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>🌌 ORBITZ</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+
+    <link href="https://fonts.googleapis.com/css?family=Orbitron:400,500,900|Raleway:400,600" rel="stylesheet">
+
+    <script src="theScript.js" type="text/javascript" async></script>
+    <link rel="stylesheet" type="text/css" href="theStyle.css">
+</head>
+<body>
+<div class="container" id="menu">
+    <h1>ORBITZ</h1>
+    <!-- Modos de juego -->
+    <div id="modos">
+        <div class="row center">
+            <div class="col-md-4 mb-3">
+                <div class="card text-white bg-primary">
+                    <div class="card-header"><h4 class="card-title">Classic</h4></div>
+                    <div class="card-body">
+
+                        <p class="card-text">
+                            Will you be the last standing?
+                        </p>
+
+                        <a class="btn btn-outline-primary btn-lg btn-block btn_start" data-modo="Clasico"
+                           id="start_clasico">Start</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card text-white bg-primary">
+                    <div class="card-header"><h4 class="card-title">Instinct</h4></div>
+                    <div class="card-body">
+
+                        <p class="card-text">
+                            Die less times to win!
+                        </p>
+                        <a class="btn btn-outline-primary btn-lg btn-block btn_start" data-modo="Instinto"
+                           id="start_instinto">Start</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card text-white bg-primary">
+                    <div class="card-header"><h4 class="card-title">Center</h4></div>
+                    <div class="card-body">
+
+                        <p class="card-text">Own the center!</p>
+
+                        <a class="btn btn-outline-primary btn-lg btn-block btn_start" data-modo="Centro"
+                           id="start_centro">Start</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Interfaz -->
+    <div id="interfaz" style="display: none">
+        <div class="card text-white bg-primary">
+            <div class="card-header"><h4 class="card-title">Game options</h4></div>
+            <div class="card-body card-text">
+                <div class="row">
+                    <!-- Players -->
+                    <div class="col-md-6">
+                        <h5 class="mb-3">Players</h5>
+                        <table class="players" id="tabla-jugadores">
+                        <tr id="player_1">
+                            <td>
+                                <svg width="20" height="20">
+                                    <rect width="20" height="20" rx="2" ry="2"></rect>
+                                </svg></td>
+                            <td><span class="key" data-keyCode="32">Space key</span></td>
+                            <td><span class="key" data-keyCode="18">Alt key</span></td>
+                        </tr>
+                        <tr id="player_2">
+                            <td>
+                                <svg width="20" height="20">
+                                    <rect width="20" height="20" rx="2" ry="2"></rect>
+                                </svg></td>
+                            <td><span class="key" data-keyCode="13">Enter key</span></td>
+                            <td><span class="key" data-keyCode="8">Backspace/delete key</span></td>
+                        </tr>
+                        <tr id="player_3" style="display: none;">
+                            <td>
+                                <svg width="20" height="20">
+                                    <rect width="20" height="20" rx="2" ry="2"></rect>
+                                </svg></td>
+                            <td><span class="key" data-keyCode="81">Q key</span></td>
+                            <td><span class="key" data-keyCode="65">A key</span></td>
+                        </tr>
+                        <tr id="player_4" style="display: none">
+                            <td>
+                                <svg width="20" height="20">
+                                    <rect width="20" height="20" rx="2" ry="2"></rect>
+                                </svg></td>
+                            <td><span class="key" data-keyCode="190">Dot key (.)</span></td>
+                            <td><span class="key" data-keyCode="189">Dash key (-)</span></td>
+                        </tr>
+                        </table>
+
+                        <a class="btn btn-outline-primary" id="addPlayer">Add player</a>
+                        <a class="btn btn-outline-primary disabled" id="removePlayer">Remove player</a>
+                    </div>
+                    <!-- Opciones -->
+                    <div class="col-md-6">
+                        <h5 class="mb-3 mt-4">Options</h5>
+                        <p>
+                            <a class="btn btn-outline-primary active" id="blackholes">Black holes</a>
+                            <a class="btn btn-outline-primary" id="harmless">Harmless</a>
+                        </p>
+                        <p>
+                            <a class="btn btn-outline-primary" id="time" data-time="0">Infinite time</a>
+                        </p>
+                    </div>
+                </div>
+                <a class="btn btn-primary btn-block btn-lg mt-3" id="initGame">Start game!</a>
+            </div>
+        </div>
+
+        <a class="btn btn-outline-primary text-white mt-3 goBack">Go back</a>
+    </div>
+
+    <!-- Creditos -->
+    <div id="creditos" style="display: none">
+        <div class="card text-white bg-primary">
+            <div class="card-header"><h4 class="card-title">Credits</h4></div>
+            <div class="card-body card-text">
+                <h1 class="mb-1">ORBITZ</h1>
+                <h2 style="text-align: center;" class="mb-4">By David Campos R.</h2>
+
+                <p>
+                    Being in my first year of career I had the idea of a game with balls that would orbitate around
+                    planets and compite between them in order to stand in the orbit. That same year, after a week of hard work
+                    I had already the first version of the game. I found the mechanics so funny, but the game fell
+                    into oblivion.
+                </p>
+                <p>
+                    Three years later, when I discover the
+                    <a href="http://upcvideogames.com/3-headed-monkey-award/">Three Headed Monkey Awards</a>,
+                    I decide this could be a good place to show the project to the world. Unfortunately, the contest
+                    application time was ending in only five days. With the colaboration of my flatmate, Paco, we worked
+                    hard to get a good version to present. And here is to you.</p>
+
+                <h3>Development</h3>
+                <ul>
+                    <li> <strong>David Campos Rodríguez</strong> &mdash; Original idea and game development
+                        <br>
+                        <a href="https://www.linkedin.com/in/david-campos-rodriguez/">Linked-In</a> |
+                        <a href="https://github.com/david-campos/">GitHub</a> |
+                        E-mail <a href="mailto:david.campos.r96@gmail.com">david.campos.r96@gmail.com</a>
+                    </li>
+                    <li> <strong>Francisco (Paco) Martínez Lasaca</strong> &mdash; Main menu design and implementation
+                        <br>
+                        <a href="https://www.linkedin.com/in/francisco-martinez-lasaca/">Linked-In</a> |
+                        <a href="https://github.com/jnxf/">GitHub</a> |
+                        E-mail <a href="mailto:pacoml7070@gmail.com">pacoml7070@gmail.com</a>
+                    </li>
+                </ul>
+
+                <h3>Special thanks</h3>
+                <p>To <strong>Julien</strong>, my good friend, for the awesome music of the main menu;
+                    to <strong>Samuel Soutullo</strong> and <strong>Cristofer Canosa</strong>, who were with me in that early development
+                    and even played against me and had a lot of fun together; to <strong>Paco</strong>, for standing me even when
+                    I was
+                    too nervous; to my parents, <strong>Ángeles</strong> and <strong>Arturo</strong>, who allowed me to make real many
+                    of my dreams, payed my studies and always supported me; and of course, to <strong>you</strong>, who are
+                    playing my humble, little creation.
+                </p>
+
+                <h3>Attributions</h3>
+                <p>"Curves" and "Beat Culture" by "Larry Groove" (Julien), whose music you can find in
+                    <a href="https://soundcloud.com/larrygroove">soundcloud.com/larrygroove</a>. Worth to take a look
+                    through.
+                </p>
+                <p>"Ion Cannon" by "Zythian &amp; Xivine" is licensed under a Creative Commons License. <br>
+                    <a href="http://bit.ly/ZythianIonCannon">http://bit.ly/ZythianIonCannon</a> <br>
+                    <a href="https://youtu.be/bmgngsmyXq0">https://youtu.be/bmgngsmyXq0</a></p>
+                <p>"Bring It Back" by "Zythian" is licensed under a Creative Commons License <br>
+                    <a href="https://soundcloud.com/zythian">https://soundcloud.com/zythian</a> <br>
+                    <a href="https://soundcloud.com/zythian/bring-it-back">https://soundcloud.com/zythian/bring-it-back</a>
+                </p>
+                <p>"Space And Time" by "Voirnox" is licensed under a Creative Commons License. <br>
+                    <a href="https://soundcloud.com/k9dubstep-voirnox">https://soundcloud.com/k9dubstep-voirnox</a> <br>
+                    <a href="https://soundcloud.com/k9dubstep-voirnox/voirnox-space-and-time">https://soundcloud.com/k9dubstep-voirnox/voirnox-space-and-time</a>
+                </p>
+                <p>Game background is licensed under a Creative Commons License. <br>
+                    Author: <a href="https://www.flickr.com/photos/palms1/">Palms</a>
+                </p>
+                <p>Some of the sound effects are taken from the
+                    <a href="http://recursostic.educacion.es/bancoimagenes/web/">Bank of Images and Sounds</a>, of the
+                    Spanish Ministery of Education, Culture and Sport.
+                </p>
+            </div>
+        </div>
+
+        <a class="btn btn-primary text-white mt-3 goBack">Go back</a>
+    </div>
+</div>
+
+<!-- Juego -->
+<div id="juego" style="display: none">
+    <img id="bkgrd" src="img/background.png">
+    <canvas id="backframe"></canvas>
+    <canvas id="mainframe">
+        Tu navegador es un pringuis, no puedes soportar la etiqueta canvas. :(
+    </canvas>
+    <canvas id="frontframe"></canvas>
+    <div id="overscreen"></div>
+</div>
+
+<!-- Reinicio -->
+<div  style="display: none" id="restartScreen">
+    <div class="withCursor">
+        <div class="card text-white bg-primary restart-card">
+            <div class="card-header"><h4 class="card-title">Restart?</h4></div>
+            <div class="card-body">
+                <a class="btn btn-outline-primary btn-lg btn-block btn_start">Restart</a>
+                <a class="btn btn-outline-primary btn-lg btn-block btn_start">Main menu</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<button id="mute" data-sound="1">🔊</button>
+<a id="goCredits">Credits</a>
+<audio src="snd/curves_julien_menu.ogg" id="sonido" autoplay loop></audio>
+</body>
+</html>

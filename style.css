@@ -1,0 +1,90 @@
+/*
+ * main: #d81b60
+ * light: #ff5c8d
+ * dark: #a00037
+ * second: #c6ff00
+ * light: #fdff58
+ * dark: #90cc00
+ */
+
+html, body {
+    background-color: #efefef;
+    color: #020202;
+    margin: 0;
+    padding: 0 1rem;
+    font-family: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #90cc00;
+}
+
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 64px;
+    padding: 7px 12px;
+    background-color: #d81b60;
+    color: white;
+    box-sizing: border-box;
+}
+
+.top-bar-center {
+    max-width: 1000px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.top-bar-logo {
+    height: 50px;
+    float: left;
+}
+
+.top-bar-menu {
+    float: right;
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.top-bar-menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.top-bar-menu .menu-item {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-menu .menu-item i {
+    max-width: 1em;
+}
+
+.top-bar-menu .menu-item span {
+    margin-left: 0.5rem;
+}
+
+.top-bar-menu .menu-item:not(:last-child) {
+    margin-right: 2rem;
+}
+
+.content {
+    max-width: 1000px;
+    margin: 64px auto;
+    padding-top: 0.5rem;
+    text-align: justify;
+}
+
+@media (max-width: 600px) {
+    .top-bar-menu .menu-item span {
+        margin-left: 0.25rem;
+    }
+
+    .top-bar-menu .menu-item:not(:last-child) {
+        margin-right: 1rem;
+    }
+}
