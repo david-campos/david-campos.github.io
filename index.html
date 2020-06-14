@@ -16,7 +16,7 @@
     <div class="top-bar-center">
         <svg alt="logo" class="top-bar-logo" xmlns="http://www.w3.org/2000/svg"
              xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-             width="250px" height="250.001px" viewBox="0 0 250 250.001" enable-background="new 0 0 250 250.001"
+             viewBox="0 0 250 250.001" enable-background="new 0 0 250 250.001"
              xml:space="preserve">
             <g>
 	<path d="M51.953,76.264c0.302,0.552,0.643,0.412,1.578,0.789c1.047,0.422,1.029-1.782,1.641-3.394
@@ -95,13 +95,13 @@
                 </i>
                 <span>Me</span>
             </a>
-            <a href="#school" title="School projects and exercises" class="menu-item">
+            <a href="#school" title="School projects" class="menu-item">
                 <i class="material-icons">
                     school
                 </i>
                 <span>School</span>
             </a>
-            <a href="#projects" title="Professional projects" class="menu-item">
+            <a href="#projects" title="Non-scholar projects" class="menu-item">
                 <i class="material-icons">bookmarks</i>
                 <span>Projects</span>
             </a>
@@ -111,7 +111,8 @@
                 </i>
                 <span>Awards</span>
             </a>
-            <a href="cv.pdf" target="_blank" title="Download the current version of my CV" class="menu-item">
+            <a href="cv.pdf" target="_blank" title="Download the current version of my CV" class="menu-item"
+            download="david_campos_cv.pdf">
                 <i class="material-icons-outlined">
                     cloud_download
                 </i>
@@ -124,34 +125,111 @@
     <section id="me">
         <h2>About Me</h2>
         <p>I am a computer engineer graduated by the University of Santiago de Compostela (Galicia, Spain).
-            During my bachelor I performed exchanges to the University of Łódź (Poland) and the Universitat Politècnica
+            During my bachelor I performed exchanges with the University of Łódź (Poland) and the Universitat
+            Politècnica
             de Catalunya (Barcelona, Spain). I am currently studying the Master's Program in Game Design and Technology
-            in
-            the University of Gothenburg (Sweden).</p>
-        <h4>My network</h4>
-        <a href="https://github.com/david-campos/">Github</a>
-        <a href="https://www.linkedin.com/in/david-campos-rodriguez/">Linked-In</a>
-        <a href="https://davidingenieria.wordpress.com/">Professional Blog</a>
-        <a href="https://normalconesacara.wordpress.com/">Artistic Blog</a>
+            in the University of Gothenburg (Sweden).</p>
+        <h3>My network</h3>
+        <a href="https://github.com/david-campos/" class="net-link">Github</a>
+        <a href="https://www.linkedin.com/in/david-campos-rodriguez/" class="net-link">Linked-In</a>
+        <a href="https://davidingenieria.wordpress.com/" class="net-link">Professional Blog</a>
+        <a href="https://normalconesacara.wordpress.com/" class="net-link">Artistic Blog</a>
     </section>
     <section id="school">
-        <h2>School Projects and Exercises</h2>
+        <h2>School Projects</h2>
         <p>During my studies, I developed or participated in the development of several projects of interest for my
-            career. Among them I would like to remark:</p>
-        <strong>TODO</strong>
+            career. Among them I would like to remark some.</p>
+        <h3>Games</h3>
+        <p>
+            <a href="https://davidingenieria.wordpress.com/2020/03/16/recreation-of-contra-nes/">
+                Remake of Contra (NES)
+            </a>:
+            my project for the course of Game Engine Architecture during my master's program in the University
+            of Gothenburg. The objective was to recreate (partially, in my case) an old arcade game in C++ using SDL.
+            I recreated completely the first two stages of the classic game Contra.
+        </p>
+        <!-- TODO: add video -->
+        <p><a href="https://davidingenieria.wordpress.com/2019/11/24/my-first-2d-and-3d-games/">
+            Remake of Lemmings and 3D Go-Style Game</a>:
+            Two games developed during my studies in the Universitat Politècnica de Catalunya for the Videogames
+            course. The first one is a recreation in C++ (from scratch) of the famous 2D game "Lemmings", while
+            the second one is a 3D game made in Unity with "Go style", in which the controlled character can move
+            only over a grid.
+        </p>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/LYbgIIOw5tc" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <iframe src="https://www.youtube.com/embed/fFqAYcFgHzg" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <p>
+            <a href="https://davidingenieria.wordpress.com/2020/02/15/rage-in-space-the-board-game/">
+                Rage in Space (board game)
+            </a>:
+            group project for the course in Gameplay Design, it is a board game for 3 players, played over a hexagonal
+            board with lots of strategic planning and quite a good amount of tension.
+        </p>
+        <h3>Documents</h3>
+        <p>
+            <a href="https://davidingenieria.wordpress.com/2019/11/27/the-camino-to-santiago-de-compostela-as-a-game/">
+                The Camino to Santiago de Compostela as a game
+            </a>:
+            document elaborated for the course in Game Research in the University of Gothenburg in which I
+            analyse the camino to Santiago de Compostela (a popular pilgrimage inside Europe) making use of the
+            tools and concepts from game research learned in the course, trying to find what makes people feel
+            engaged into it and why they might say it is "funny" to do it. Link to the original PDF available
+            in the post in my blog.
+        </p>
     </section>
     <section id="projects">
         <h2>Non-scholar Projects</h2>
+        <p>There are also some projects I developed which are not school-related. I collect here some of those
+        which are publicly accessible.</p>
+        <h3>Games</h3>
         <p><a href="orbitz/" title="Orbitz">Orbitz</a>: small web game based on canvas that I developed during the free
             time in a week during my first
             year of bachelor which turned out to be quite funny to play with friends. With the help of a friend I
             improved it slightly and added a main menu
             during my fourth year.</p>
-        <strong>TODO</strong>
+        <p><a href="https://davidingenieria.wordpress.com/2019/11/29/infinite-runner/#more-440" title="Orbitz">
+            Jumpy Fox (infinite runner)</a>: small game I made in a weekend to experiment a bit with procedural
+            generation making an infinite runner in Unity. It is also published in the
+            <a href="https://play.google.com/store/apps/details?id=com.DavidCamposRodriguez.JumpyFox"
+               title="The game in the Google PlayStore">Google Playstore</a>.</p>
+        <div class="videos">
+            <iframe src="https://www.youtube.com/embed/cJcY39Nnxk0" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
+        <h3>Apps</h3>
+        <p><a href="https://www.gohu.es/" title="About Gohu (spanish webpage)">Gohu</a>:
+            Gohu is a Spanish app that allows people to centralise their postal mail into their phone. It allows
+            companies
+            to match the clients for which they already have postal addresses to send messages directly through the app
+            instead of using physical mail, contributing to protect the environment by saving paper.
+            I participated in this project during my work at Nedaware SL developing the whole front-end and also helping
+            with some parts of the backend.
+        </p>
+        <p><a href="https://app4refs.org/">App4Refs</a>:
+            developed in collaboration the Fundació ACSAR from Barcelona for the University of Santiago de Compostela,
+            initially as my final degree project but continued after it. It was created within the frame of the
+            <a href="https://unintegra.usc.es/" title="UNINTEGRA project web page">UNINTEGRA project</a>
+            and it consisted of a web app to enhance
+            refugees integration in Greece by providing information which may be useful to them (based on data from
+            ONGs and some tests we made on-site with the migrants).
+            Designed by <a href="https://ideami.com/ideami/">Javier Ideami</a>, the application aimed at being as
+            simple as possible and containing as few text as possible in order to make it accessible to a
+            wider range of users.</p>
     </section>
     <section id="awards">
         <h2>Awards</h2>
-        <strong>TODO</strong>
+        <p>I received and award for my final degree project being among the three best final degree projects of
+        2018-2019 by the Technical School of Enginnering in Santiago de Compostela.</p>
+        <p>In the MLH Copenhacks 2019 my team and I managed to achieve the second main prize with
+        <a href="https://devpost.com/software/drawploy">Drawploy</a>, a PWA using image recognition to deploy paper-drawn network infrastructure
+        directly to cloud services (such as Google Cloud).</p>
     </section>
 </main>
 </body>

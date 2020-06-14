@@ -12,8 +12,10 @@ updateMenuIcons = function () {
         let bottom = top + link.refs.offsetHeight;
         if (scrollPos >= top && scrollPos <= bottom) {
             link.i.className = "material-icons";
+            link.link.classList.add("current");
         } else {
             link.i.className = "material-icons-outlined";
+            link.link.classList.remove("current");
         }
     });
 };
