@@ -119,6 +119,9 @@ h1, h2, h3, h4, h5 {
         height: 71px;
     }
 
+    .content {
+        margin-top: 71px;
+    }
 }
 
 @media (max-width: 820px) {
