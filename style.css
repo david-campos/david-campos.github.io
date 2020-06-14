@@ -42,12 +42,20 @@ a {
     z-index: 999;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5 {
     font-weight: 500;
+}
+
+h6 {
+    font-weight: normal;
 }
 
 h1, h2 {
     color: #d81b60;
+}
+
+h3 {
+    margin: 3rem 0 1rem;
 }
 
 h2 i.material-icons {
@@ -124,6 +132,10 @@ h2 i.material-icons {
 }
 
 h2:first-child, h3:first-child {
+    margin-top: 0;
+}
+
+h3+.project-header {
     margin-top: 0;
 }
 
@@ -256,7 +268,7 @@ h2:first-child, h3:first-child {
 footer {
     display: flex;
     flex-direction: row;
-    background-color: #a00037;
+    background-color: #d81b60;
     font-size: 1rem;
     color: #eee;
     width: 100%;
@@ -276,7 +288,7 @@ ul.my-network-links li {
     padding: 0;
 }
 
-footer section {
+footer>div {
     flex: 1 0 auto;
     text-align: right;
 }
