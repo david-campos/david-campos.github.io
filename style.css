@@ -198,7 +198,7 @@ h2:first-child, h3:first-child {
 }
 
 .resume-entry-item:not(:first-child) {
-    margin-left: calc(80px + 1rem);
+    margin-left: 55px;
     margin-top: 1rem;
 }
 
