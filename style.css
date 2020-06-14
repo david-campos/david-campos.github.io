@@ -127,6 +127,39 @@ h2:first-child, h3:first-child {
     margin-top: 0;
 }
 
+.project-header {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-top: 3rem;
+}
+
+.project-header .title {
+    font-weight: 500;
+    flex: 1 1 auto;
+    font-size: 1.1em;
+}
+
+.project-tags {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1 1 auto;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.project-tags>span {
+    background-color: #79b700;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    font-size: 0.7em;
+    margin: 5px;
+    box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 .img-and-text {
     display: flex;
     flex-direction: row;
