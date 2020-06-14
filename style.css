@@ -40,6 +40,16 @@ h1, h2, h3, h4, h5 {
     font-weight: 500;
 }
 
+h1, h2 {
+    color: #d81b60;
+}
+
+h2 i.material-icons {
+    font-size: 1em;
+    position: relative;
+    top: 0.15em;
+}
+
 .top-bar-center {
     max-width: 1000px;
     height: 100%;
@@ -93,11 +103,25 @@ h1, h2, h3, h4, h5 {
 
 .content {
     max-width: 1000px;
-    margin: 64px auto;
+    margin: 64px auto 0;
     text-align: justify;
-    padding: 0.5rem 3rem;
+    padding: 1rem;
+}
+
+.content section {
+    padding: 3rem;
+    margin: 3rem 0;
     background: white;
-    box-shadow: 0px 0px 10px 10px white;
+    border-radius: 5px;
+    box-shadow: 2px 3px 5px #ccc;
+}
+
+.content section:first-child {
+    margin-top: 0;
+}
+
+.content section h2:first-child {
+    margin-top: 0;
 }
 
 .videos {
@@ -112,6 +136,23 @@ h1, h2, h3, h4, h5 {
     height: 250px;
     margin: 0.5rem;
     flex: 1 0 auto;
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #a00037;
+    font-size: 1rem;
+    color: #eee;
+    width: 100%;
+    min-height: 5rem;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+footer section {
+    flex: 1 0 auto;
+    text-align: right;
 }
 
 @media (min-height: 800px) {
@@ -129,28 +170,50 @@ h1, h2, h3, h4, h5 {
         font-size: 14pt;
     }
 
-    .content {
-        padding: 0.5rem 1rem;
-        box-shadow: none;
+    .content section {
+        padding: 1.5rem;
+        margin: 1rem 0 0;
     }
 
     .top-bar-menu .menu-item {
         margin: 0 0.5rem;
     }
 }
+
 @media (max-width: 620px) {
+    html {
+        background-color: white;
+    }
+
     body {
         font-size: 12pt;
+        background-color: white;
     }
 
     .top-bar-menu .menu-item span {
         margin-left: 0.25rem;
     }
+
+    .content {
+        padding: 0;
+    }
+
+    .content section {
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    .content section:not(:last-child) {
+        border-bottom: 2px solid #eeeeee;
+    }
 }
+
 @media (max-width: 350px) {
     .top-bar-menu .menu-item {
         width: 4em;
     }
+
     .top-bar-menu .menu-item i {
         display: none;
     }
