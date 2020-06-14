@@ -42,7 +42,7 @@ a {
     z-index: 999;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 500;
 }
 
@@ -189,6 +189,56 @@ h2:first-child, h3:first-child {
     flex: 1 1 60%;
 }
 
+.resume-entry {
+    margin: 2rem 0;
+}
+
+.resume-entry-item {
+    display: flex;
+}
+
+.resume-entry-item:not(:first-child) {
+    margin-left: calc(80px + 1rem);
+    margin-top: 1rem;
+}
+
+.resume-entry-item>.resume-entry-icon {
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 5px;
+    flex: 0 0 auto;
+}
+
+.resume-entry-item:not(:first-child) .resume-entry-icon {
+    width: 50px;
+    height: 50px;
+}
+
+
+.resume-entry-item>.resume-entry-content {
+    flex: 1 1 auto;
+    margin: 0 1rem;
+}
+
+.resume-entry-item>.resume-entry-content h4,
+.resume-entry-item>.resume-entry-content h5,
+.resume-entry-item>.resume-entry-content h6 {
+    margin: 0;
+}
+
+.resume-entry-item>.resume-entry-content>.notes {
+    font-size: 0.8em;
+    color: #333;
+    margin: 1rem 0 0;
+}
+
+.resume-entry-item>.resume-entry-dates {
+    flex: 0 0 auto;
+    font-size: 0.8em;
+}
+
+
 .videos {
     display: flex;
     flex-direction: row;
@@ -287,6 +337,22 @@ footer section {
         margin: 0;
         border-radius: 0;
         box-shadow: none;
+    }
+
+    .resume-entry {
+        background-color: white;
+        border-radius: 5px;
+        padding: 1rem;
+    }
+
+    .resume-entry-item {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resume-entry-item:not(:first-child) {
+        margin: 1rem 0 0;
+        flex-direction: row;
     }
 
     .content section:not(:last-child) {
