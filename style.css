@@ -162,7 +162,11 @@ h2:first-child, h3:first-child {
     margin-top: 0;
 }
 
-h3 + .project-header {
+.project {
+    margin-top: 3rem;
+}
+
+h3 + .project {
     margin-top: 0;
 }
 
@@ -171,7 +175,6 @@ h3 + .project-header {
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
-    margin-top: 3rem;
 }
 
 .project-header .title {
