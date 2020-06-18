@@ -362,35 +362,60 @@
                 <meta itemprop="description" content="Demo of my recreation of Contra (NES)">
                 <meta itemprop="thumbnailUrl" content="https://img.youtube.com/vi/zmdyU1dkvy0/default.jpg">
                 <meta itemprop="uploadDate" content="2020-06-14">
-                <iframe src="https://www.youtube.com/embed/zmdyU1dkvy0" frameborder="0"
+                <iframe class="video" src="https://www.youtube.com/embed/zmdyU1dkvy0" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
                 </iframe>
             </div>
         </div>
-        <div class="project-header">
-            <a href="https://davidingenieria.wordpress.com/2019/11/24/my-first-2d-and-3d-games/" class="title">
-                Remake of Lemmings and 3D Go-Style Game
-            </a>
-            <div class="project-tags">
-                <span>C++</span>
-                <span>OpenGL</span>
-                <span>2D</span>
-                <span>3D</span>
-                <span>Unity (C#)</span>
+        <div class="project" itemscope itemtype="https://schema.org/VideoGame https://schema.org/SoftwareSourceCode">
+            <link rel="author" href="https://david-campos.github.io">
+            <meta itemprop="applicationCategory" content="Game, Multimedia">
+            <meta itemprop="gamePlatform" content="pc">
+            <meta itemprop="playMode" content="SinglePlayer">
+            <meta itemprop="operatingSystem" content="Windows">
+            <link itemprop="isBasedOn"
+                  href="https://en.wikipedia.org/wiki/Lemmings_(video_game)">
+            <div class="project-header">
+                <a href="https://davidingenieria.wordpress.com/2019/11/24/my-first-2d-and-3d-games/" class="title"
+                   itemprop="name">
+                    Remake of Lemmings and 3D Go-Style Game
+                </a>
+                <div class="project-tags">
+                    <span itemprop="programmingLanguage">C++</span>
+                    <span>OpenGL</span>
+                    <span>2D</span>
+                    <span>3D</span>
+                    <span itemprop="programmingLanguage">C# (Unity)</span>
+                </div>
             </div>
-        </div>
-        <p>Two games developed during my studies in the Universitat Politècnica de Catalunya for the Videogames
-            course. The first one is a recreation in C++ (from scratch) of the famous 2D game "Lemmings", while
-            the second one is a 3D game made in Unity with "Go style", in which the controlled character can move
-            only over a grid.</p>
-        <div class="videos">
-            <iframe src="https://www.youtube.com/embed/LYbgIIOw5tc" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-            <iframe src="https://www.youtube.com/embed/fFqAYcFgHzg" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
+            <p itemprop="description">
+                Two games developed during my studies in the Universitat Politècnica de Catalunya for the Videogames
+                course. The first one is a recreation in C++ (from scratch) of the famous 2D game "Lemmings", while
+                the second one is a 3D game made in Unity with "Go style", in which the controlled character can move
+                only over a grid.</p>
+            <div class="videos">
+                <div class="video" itemprop="trailer" itemscope itemtype="http://schema.org/VideoObject">
+                    <meta itemprop="name" content="Demo Lemmings">
+                    <meta itemprop="description" content="Demo of my recreation of the videogame Lemmings">
+                    <meta itemprop="thumbnailUrl" content="https://img.youtube.com/vi/LYbgIIOw5tc/default.jpg">
+                    <meta itemprop="uploadDate" content="2018-04-30">
+                    <iframe src="https://www.youtube.com/embed/LYbgIIOw5tc" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+                <div class="video" itemprop="trailer" itemscope itemtype="http://schema.org/VideoObject">
+                    <meta itemprop="name" content="Go-Style 3D Game">
+                    <meta itemprop="description" content="Demo of my Go-Style 3D game made in Unity for the course in VideoGames at the Polytechnic University of Catalonia">
+                    <meta itemprop="thumbnailUrl" content="https://img.youtube.com/vi/fFqAYcFgHzg/default.jpg">
+                    <meta itemprop="uploadDate" content="2019-11-23">
+                    <iframe src="https://www.youtube.com/embed/fFqAYcFgHzg" frameborder="0"
+                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
         </div>
         <div class="project-header">
             <a href="https://davidingenieria.wordpress.com/2020/02/15/rage-in-space-the-board-game/" class="title">
@@ -424,7 +449,7 @@
         </p>
         <p>For presentation purposes, we made the following quite-humorous video (the app is in Spanish, however).</p>
         <div class="videos">
-            <iframe src="https://www.youtube.com/embed/FRCyExNoweM" frameborder="0"
+            <iframe class="video" src="https://www.youtube.com/embed/FRCyExNoweM" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
@@ -472,7 +497,7 @@
             <a href="https://play.google.com/store/apps/details?id=com.DavidCamposRodriguez.JumpyFox"
                title="The game in the Google PlayStore">Google Playstore</a>.</p>
         <div class="videos">
-            <iframe src="https://www.youtube.com/embed/cJcY39Nnxk0" frameborder="0"
+            <iframe class="video" src="https://www.youtube.com/embed/cJcY39Nnxk0" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
@@ -508,7 +533,7 @@
             PWA in Angular which we incrusted in the already-existent WordPress, and it is the part you can
             see during the process of making a booking or when you log in as a client. </p>
         <div class="videos">
-            <iframe src="https://www.youtube.com/embed/eJEl8GN0dm8" frameborder="0"
+            <iframe class="video" src="https://www.youtube.com/embed/eJEl8GN0dm8" frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
