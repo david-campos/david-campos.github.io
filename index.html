@@ -2,15 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>David Campos Rodríguez</title>
+    <title>David Campos Rodríguez, computer engineer</title>
+
+    <meta name="description" content="I am a computer engineer from Galicia, Spain. Find here more information about my projects and experience as a software developer.">
+    <meta name="keywords" content="computer, engineer, informatics, developer, david campos, projects, curriculum, portfolio">
+    <meta name="author" content="David Campos Rodríguez">
+
+    <meta name="twitter:card" content="summary">
+
+    <meta name="og:title" content="David Campos Rodríguez projects">
+    <meta name="og:site_name" content="David Campos Rodríguez, computer engineer">
+    <meta name="og:description" content="I am a computer engineer from Galicia, Spain. Find here more information about my projects and experience as a software developer.">
+    <meta name="og:type" content="profile">
+    <meta name="profile:first_name" content="David">
+    <meta name="profile:last_name" content="Campos Rodríguez">
+
+    <meta name="og:image" content="https://david-campos.github.io/img/logo.png">
+    <meta name="og:image:type" content="image/png">
+    <meta name="og:image:alt" content="David's personal logo">
+    <meta name="og:image:width" content="250">
+    <meta name="og:image:height" content="250">
+
     <link href="style.css" rel="stylesheet">
     <link rel="icon" type="image/png" href="favicon.png">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#d81b60">
     <meta name="msapplication-navbutton-color" content="#d81b60">
     <meta name="apple-mobile-web-app-status-bar-style" content="#d81b60">
+
     <script src="interaction.js"></script>
 </head>
 <body>
@@ -123,20 +145,33 @@
         </nav>
     </div>
 </header>
-<main class="content">
+<main class="content" itemscope itemtype="http://schema.org/Person">
     <section id="me">
         <h2>
             <i class="material-icons">person</i>
             About Me
         </h2>
         <div class="img-and-text">
-            <div class="img"><img src="img/me.jpg" alt="me"></div>
+            <div class="img"><img src="img/me.jpg" itemprop="image" alt="photo of David Campos Rodríguez"></div>
             <div class="text">
                 <h3>Who am I?</h3>
-                <p>My name is David Campos Rodríguez, I am a computer engineer graduated by the University of Santiago
-                    de Compostela (Galicia, Spain). I am an enthusiast of the computer sciences always looking forward
-                    to learn more.</p>
+                <p>My name is <span itemprop="name">David Campos Rodríguez</span>, I am a
+                    <span itemprop="hasCredential" itemscope itemtype="http://schema.org/EducationalOccupationalCredential">
+                        <span itemprop="name">computer engineer</span>
+                        <meta itemprop="credentialCategory" content="degree">
+                        graduated by the
+                        <span itemprop="recognizedBy" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+                            <span itemprop="name">University of Santiago de Compostela</span>
+                            <link itemprop="sameAs" href="https://en.wikipedia.org/wiki/University_of_Santiago_de_Compostela">
+                            <span itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+                                (<span itemprop="addressRegion">Galicia</span>, <span itemprop="addressCountry">Spain</span>)
+                            </span>
+                        </span>
+                    </span>. I am an enthusiast of the computer
+                    sciences always looking forward to learn more.</p>
                 <p>I really enjoy travelling, meeting new cultures and trying new food.</p>
+                <p>I speak <span itemprop="knowsLanguage">Galician</span>,
+                    <span itemprop="knowsLanguage">English</span> and <span itemprop="knowsLanguage">Spanish</span>.</p>
                 <h3>My network</h3>
                 <ul class="my-network-links">
                     <li><a href="https://github.com/david-campos/" class="net-link">Github</a></li>
@@ -149,64 +184,92 @@
         </div>
         <h3>Working Experience</h3>
         <div class="resume-entry">
-            <div class="resume-entry-item">
-                <img class="resume-entry-icon" src="img/nedaware.png" alt="logo">
+            <div class="resume-entry-item" itemprop="hasOccupation" itemscope itemtype="http://schema.org/Role">
+                <img class="resume-entry-icon" itemprop="image" src="img/nedaware.png" alt="logo">
                 <div class="resume-entry-content">
                     <h4>Nedaware SL / Tournride</h4>
-                    <h5>Full-Stack Developer</h5>
-                    <p class="notes">Systems for third parties</p>
+                    <h5 itemprop="roleName">Full-Stack Developer</h5>
+                    <p itemprop="description" class="notes">Systems for third parties</p>
                 </div>
-                <span class="resume-entry-dates">2017 - 2019</span>
+                <span class="resume-entry-dates">
+                    <span itemprop="startDate">2017</span> - <span itemprop="endDate">2019</span>
+                </span>
             </div>
         </div>
         <div class="resume-entry">
-            <div class="resume-entry-item">
-                <img class="resume-entry-icon" src="img/logo.svg" alt="logo">
+            <div class="resume-entry-item" itemprop="hasOccupation" itemscope itemtype="http://schema.org/Role">
+                <img class="resume-entry-icon" itemprop="image" src="img/logo.svg" alt="logo">
                 <div class="resume-entry-content">
                     <h4>Freelance</h4>
-                    <h5>Full-Stack Developer</h5>
+                    <h5 itemprop="roleName">Full-Stack Developer</h5>
                     <p class="notes">Developing App4Refs</p>
                 </div>
-                <span class="resume-entry-dates">2018</span>
+                <meta itemprop="startDate" content="2018">
+                <span itemprop="endDate" class="resume-entry-dates">2018</span>
             </div>
         </div>
         <h3>Education</h3>
         <div class="resume-entry">
-            <div class="resume-entry-item">
-                <img class="resume-entry-icon" src="img/gu.png" alt="logo">
+            <div class="resume-entry-item" itemprop="alumniOf" itemscope
+                 itemtype="http://schema.org/OrganizationRole">
+                <img class="resume-entry-icon" itemprop="image" src="img/gu.png" alt="logo">
                 <div class="resume-entry-content">
-                    <h4>University of Gothenburg</h4>
+                    <h4 itemprop="alumniOf" itemscope
+                        itemtype="http://schema.org/CollegeOrUniversity">
+                        <span itemprop="name" >University of Gothenburg</span>
+                        <link itemprop="sameAs" href="https://en.wikipedia.org/wiki/University_of_Gothenburg">
+                    </h4>
                     <h5>Master's Program in Game Design & Technology</h5>
                     <p class="notes">Imparted in collaboration with Chalmers University of Technology</p>
                 </div>
-                <span class="resume-entry-dates">2019 - 2021</span>
+                <span class="resume-entry-dates">
+                    <span itemprop="startDate">2019</span> - <span itemprop="endDate">2021</span>
+                </span>
             </div>
         </div>
         <div class="resume-entry">
-            <div class="resume-entry-item">
-                <img class="resume-entry-icon" src="img/usc.png" alt="logo">
+            <div class="resume-entry-item" itemprop="alumniOf" itemscope
+                 itemtype="http://schema.org/OrganizationRole">
+                <img class="resume-entry-icon" itemprop="image" src="img/usc.png" alt="logo">
                 <div class="resume-entry-content">
-                    <h4>University of Santiago de Compostela</h4>
-                    <h5>Bachelor in Computer Engineering</h5>
+                    <h4 itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+                        <span itemprop="name">University of Santiago de Compostela</span>
+                        <link itemprop="sameAs" href="https://en.wikipedia.org/wiki/University_of_Santiago_de_Compostela">
+                    </h4>
+                    <h5 itemprop="description">Bachelor in Computer Engineering</h5>
                     <p class="notes">Maximum grade in final degree project</p>
                 </div>
-                <span class="resume-entry-dates">2014 - 2018</span>
+                <span class="resume-entry-dates">
+                    <span itemprop="startDate">2014</span> - <span itemprop="endDate">2018</span>
+                </span>
             </div>
-            <div class="resume-entry-item">
-                <img class="resume-entry-icon" src="img/upc.png" alt="logo">
+            <div class="resume-entry-item" itemprop="alumniOf" itemscope
+                 itemtype="http://schema.org/OrganizationRole">
+                <img class="resume-entry-icon" itemprop="image" src="img/upc.png" alt="logo">
                 <div class="resume-entry-content">
-                    <h5>Universitat Politècnica de Catalunya</h5>
-                    <h6>Séneca Exchange</h6>
+                    <h5 itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+                        <span itemprop="name">Universitat Politècnica de Catalunya</span>
+                        <link itemprop="sameAs" href="https://en.wikipedia.org/wiki/Polytechnic_University_of_Catalonia">
+                    </h5>
+                    <h6 itemprop="description">Séneca Exchange</h6>
                 </div>
-                <span class="resume-entry-dates">2017 - 2018</span>
+                <span class="resume-entry-dates">
+                    <span itemprop="startDate">2017</span> - <span itemprop="endDate">2018</span>
+                </span>
             </div>
-            <div class="resume-entry-item">
-                <img class="resume-entry-icon" src="img/ul.png" alt="logo">
+            <div class="resume-entry-item" itemprop="alumniOf" itemscope
+                 itemtype="http://schema.org/OrganizationRole">
+                <img class="resume-entry-icon" itemprop="image" src="img/ul.png" alt="logo">
                 <div class="resume-entry-content">
-                    <h5>University of Łódź</h5>
-                    <h6>Erasmus+ Exchange</h6>
+                    <h5 itemprop="alumniOf" itemscope itemtype="http://schema.org/CollegeOrUniversity">
+                        <span itemprop="name">University of Łódź</span>
+                        <link itemprop="sameAs" href="https://en.wikipedia.org/wiki/University_of_%C5%81%C3%B3d%C5%BA">
+                    </h5>
+                    <h6 itemprop="description">Erasmus+ Exchange</h6>
                 </div>
-                <span class="resume-entry-dates">2016 - 2017</span>
+                <span class="resume-entry-dates">
+                    <span itemprop="startDate">2016</span> - <span itemprop="endDate">2017</span>
+                </span>
             </div>
         </div>
     </section>
@@ -215,12 +278,13 @@
             <i class="material-icons">emoji_events</i>
             Awards
         </h2>
-        <p>I received and award for my final degree project being among the three best final degree projects of
-            2018-2019 by the Technical School of Enginnering in Santiago de Compostela.</p>
-        <p>In the MLH Copenhacks 2019 my team and I managed to achieve the second main prize with
+        <p>I received and award for my final degree project being among the
+            <span itemprop="award">three best final degree projects of 2018-2019 by the Technical Superior School
+                of Enginnering in Santiago de Compostela</span>.</p>
+        <p>My team and I managed to achieve the
+            <span itemprop="award">second main prize in the MLH Copenhacks 2019</span> with
             <a href="https://devpost.com/software/drawploy">Drawploy</a>, a PWA using image recognition to deploy
-            paper-drawn network infrastructure
-            directly to cloud services (such as Google Cloud).</p>
+            paper-drawn network infrastructure directly to cloud services (such as Google Cloud).</p>
     </section>
     <section id="school">
         <h2>
