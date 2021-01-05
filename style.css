@@ -412,6 +412,13 @@ footer > div {
         align-items: center;
     }
 
+    .resume-entry-item > .resume-entry-dates {
+        margin-top: 1rem;
+    }
+    .resume-entry-item > .resume-entry-content {
+        margin-top: 1rem;
+    }
+
     .resume-entry-item:not(:first-child) {
         margin: 1rem 0 0;
         flex-direction: row;
