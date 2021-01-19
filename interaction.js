@@ -3,20 +3,26 @@
  */
 let links = [];
 
+function clamp(value, min, max) {
+    return Math.min(Math.max(value, min), max);
+}
+
 updateMenuIcons = function () {
     if (links.length < 1) return;
 
     let scrollPos = document.documentElement.scrollTop + links[0].refs.offsetTop;
+    let currentTop = 0;
     links.forEach(link => {
-        let top = link.refs.offsetTop;
-        let bottom = top + link.refs.offsetHeight;
-        if (scrollPos >= top && scrollPos <= bottom) {
+        let bottom = link.refs.offsetTop + link.refs.offsetHeight - 20; // 20 px before
+        if (scrollPos >= currentTop && scrollPos < bottom) {
             link.i.className = "material-icons";
             link.link.classList.add("current");
+            window.history.replaceState(null, document.title, `#${link.refs.id}`);
         } else {
             link.i.className = "material-icons-outlined";
             link.link.classList.remove("current");
         }
+        currentTop = bottom;
     });
 };
 
@@ -26,8 +32,7 @@ scrollTo = function (element, event) {
     event.preventDefault();
     event.stopPropagation();
 
-    let top = element.offsetTop - links[0].refs.offsetTop;
-    window.scroll({behavior: "smooth", top: top});
+    element.scrollIntoView({behavior: "smooth", inline: "start"});
 };
 
 document.addEventListener("DOMContentLoaded", function () {
