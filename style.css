@@ -299,7 +299,7 @@ h3 + .project {
 .resume-entry-item > .resume-entry-content > .notes {
     font-size: 0.8em;
     color: #333;
-    margin: 1rem 0 0;
+    margin: .5rem 0 0;
 }
 
 .resume-entry-item > .resume-entry-dates {
