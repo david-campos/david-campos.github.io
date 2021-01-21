@@ -11,6 +11,7 @@ html, body {
     margin: 0;
     background-color: #efefef;
     color: #101010;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -176,6 +177,7 @@ h2:first-child, h3:first-child {
 
 .project {
     margin-top: 3rem;
+    scroll-margin-top: 5rem;
 }
 
 h3 + .project {
@@ -212,6 +214,22 @@ h3 + .project {
     font-size: 0.7em;
     margin: 5px;
     box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.project > .shot-and-desc {
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-columns: min-content 1fr;
+    margin: 1em 0;
+}
+
+.project > .shot-and-desc > img {
+    height: 100%;
+    width: auto;
+    object-fit: contain;
+}
+.project > .shot-and-desc > p {
+    margin: 0;
 }
 
 .link-list {

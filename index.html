@@ -130,15 +130,15 @@
                 </i>
                 <span>Awards</span>
             </a>
-            <a href="#school" title="School projects" class="menu-item">
-                <i class="material-icons">
-                    school
-                </i>
-                <span>School</span>
-            </a>
             <a href="#projects" title="Non-scholar projects" class="menu-item">
                 <i class="material-icons">bookmarks</i>
                 <span>Projects</span>
+            </a>
+            <a href="#documents" title="Publications and other documents" class="menu-item">
+                <i class="material-icons">
+                    school
+                </i>
+                <span>Documents</span>
             </a>
             <a href="cv.pdf" target="_blank" title="Download the current version of my CV" class="menu-item"
                download="david_campos_cv.pdf">
@@ -285,7 +285,8 @@
                               href="https://en.wikipedia.org/wiki/University_of_Santiago_de_Compostela">
                     </h4>
                     <h5 itemprop="description">Bachelor in Computer Engineering</h5>
-                    <p class="notes">Maximum grade in the bachelor's thesis</p>
+                    <p class="notes">Maximum grade in the <a href="#bachelor-final-project">bachelor final project</a>
+                    </p>
                 </div>
                 <span class="resume-entry-dates">
                     <span itemprop="startDate">2014</span> - <span itemprop="endDate">2018</span>
@@ -336,13 +337,12 @@
             <a href="https://devpost.com/software/drawploy">Drawploy</a>, a PWA using image recognition to deploy
             paper-drawn network infrastructure directly to cloud services (such as Google Cloud).</p>
     </section>
-    <section id="school">
+    <section id="projects">
         <h2>
-            <i class="material-icons">school</i>
-            School Projects
+            <i class="material-icons">bookmarks</i>
+            Projects
         </h2>
-        <p>During my studies, I developed or participated in the development of several projects of interest for my
-            career. I include here some of those which are publicly available or that I made a blog post about.</p>
+        <p>Some projects I have worked on.</p>
         <h3>Games</h3>
         <div class="project" itemscope itemtype="https://schema.org/VideoGame https://schema.org/SoftwareSourceCode">
             <link itemprop="author" rel="author" href="https://david-campos.github.io">
@@ -394,6 +394,37 @@
                 <iframe class="video" src="https://www.youtube.com/embed/zmdyU1dkvy0" frameborder="0"
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                         allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-header">
+                <a href="https://davidingenieria.wordpress.com/2019/11/29/infinite-runner/#more-440"
+                   title="Jumpy Fox blog post" class="title">
+                    Jumpy Fox (infinite runner)</a>
+                <div class="project-tags">
+                    <span>Unity (C#)</span>
+                    <span>Procedural Generation</span>
+                    <span>Achievements</span>
+                </div>
+            </div>
+            <p>Small game I made in a weekend to experiment a bit with procedural
+                generation making an infinite runner in Unity. All the elements in the game are randomly generated,
+                as well as the floor height, and it has a considerable amount of achievements for the players.
+                It is also published in the
+                <a href="https://play.google.com/store/apps/details?id=com.DavidCamposRodriguez.JumpyFox"
+                   title="The game in the Google PlayStore">Google Playstore</a>.
+            </p>
+            <ul class="link-list">
+                <li>
+                    <i class="fab fa-google-play"></i>
+                    <a href="https://play.google.com/store/apps/details?id=com.DavidCamposRodriguez.JumpyFox">Get It on
+                        Google Play-Store</a>
+                </li>
+            </ul>
+            <div class="videos">
+                <iframe class="video" src="https://www.youtube.com/embed/cJcY39Nnxk0" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
                 </iframe>
             </div>
         </div>
@@ -514,6 +545,20 @@
                 </div>
             </div>
         </div>
+        <div class="project">
+            <div class="project-header">
+                <a href="orbitz/" title="Orbitz" class="title">Orbitz</a>
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>canvas</span>
+                </div>
+            </div>
+            <p>Small web game based on canvas that I developed during the free time in a week during my first
+                year of bachelor which turned out to be quite funny to play with friends. With the help of Paco Martínez
+                Lasaca I improved it slightly and added a main menu during my fourth year.</p>
+        </div>
         <div class="project" itemscope itemtype="https://schema.org/Game">
             <div class="project-header">
                 <a itemprop="url"
@@ -534,6 +579,73 @@
             </p>
         </div>
         <h3>Apps</h3>
+        <div class="project">
+            <div class="project-header">
+                <a href="https://www.tournride.com/" title="Tournride" class="title">Tournride internal system</a>
+                <div class="project-tags">
+                    <span>Angular (TypeScript)</span>
+                    <span>ApiPlatform (Symfony, PHP)</span>
+                    <span>Payment System</span>
+                    <span>Logistics</span>
+                </div>
+            </div>
+            <p>During my work at Nedaware SL I developed both the front-end and back-end of the internal management
+                system for Tournride, a bike-rental company for the camino to Santiago. The administration part,
+                which was probably the bulk of the work, is sadly not available to the public (the system manages
+                all kinds of processes in the company, estimating the bike transport times, booking cancellations
+                and returns, bike fixing and maintenance, incidences, business analytics, an estimator for external
+                agencies, discounts, etc).
+            <p>However, part of this internal system is embedded inside the public web-page of Tournride. This part is a
+                PWA in Angular which we incrusted in the already-existent WordPress, and it is the part you can
+                see during the process of making a booking or when you log in as a client. </p>
+            <div class="videos">
+                <iframe class="video" src="https://www.youtube.com/embed/eJEl8GN0dm8" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-header">
+                <a href="https://www.gohu.es/" title="About Gohu (spanish webpage)" class="title">Gohu</a>
+                <div class="project-tags">
+                    <span>Angular (TypeScript)</span>
+                    <span>PWA</span>
+                </div>
+            </div>
+            <p>
+                Gohu is a Spanish app that allows people to centralise their postal mail into their phone. It allows
+                companies
+                to match the clients for which they already have postal addresses to send messages directly through the
+                app
+                instead of using physical mail, contributing to protecting the environment by saving paper.
+                I participated in this project during my work at Nedaware SL developing the whole front-end and also
+                helping
+                with some parts of the backend.
+            </p>
+        </div>
+        <div class="project">
+            <div class="project-header" id="app4refs">
+                <a href="https://app4refs.org/" class="title">App4Refs</a>
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>Focus Group</span>
+                </div>
+            </div>
+            <p>Developed in collaboration with the Fundació ACSAR from Barcelona for the University of Santiago de
+                Compostela,
+                initially as my <a href="#bachelor-final-project">bachelor final project</a> (but continued working
+                after
+                its finalization). It was created within the frame of the
+                <a href="https://unintegra.usc.es/" title="UNINTEGRA project web page">UNINTEGRA project</a>
+                and it consisted of a web app to enhance
+                refugees integration in Greece by providing information which may be useful to them (based on data from
+                ONGs and some tests we made on-site with the migrants).
+                Designed by <a href="https://ideami.com/ideami/">Javier Ideami</a>, the application aimed at being as
+                simple as possible and containing as few text as possible in order to make it accessible to a
+                wider range of users.</p>
+        </div>
         <div class="project" itemscope itemtype="http://schema.org/SoftwareSourceCode">
             <link itemprop="author" rel="author" href="https://david-campos.github.io">
             <div class="project-header">
@@ -575,7 +687,43 @@
                 </iframe>
             </div>
         </div>
-        <h3>Documents</h3>
+    </section>
+    <section id="documents">
+        <h2>
+            <i class="material-icons">school</i>
+            Documents
+        </h2>
+        <p>Section for some of the publications and other documents I authored.</p>
+        <div class="project" itemscope itemtype="https://schema.org/DigitalDocument" id="bachelor-final-project">
+            <link itemprop="author" rel="author" href="https://david-campos.github.io">
+            <div class="project-header">
+                <a href="https://github.com/david-campos/app4refs/raw/master/documentation_28_07_2018.pdf"
+                   class="title" itemprop="url">
+                    <span itemprop="name">Bachelor Final Project Report</span>
+                </a>
+                <div class="project-tags">
+                    <span itemprop="keywords">Web Development</span>
+                </div>
+            </div>
+            <p itemprop="description">
+                This is my bachelor's thesis, the report about the elaboration of <a href="#app4refs">App4Refs</a>,
+                an application to enhance the integration of refugees in Athens, Greece. I obtained the maximum grade
+                due to the
+                special attention to detail and exhaustive analysis. The document details everything, including the
+                project
+                management, requirements capture, design, implementation and testing of the application; as well as a
+                technical
+                and a user manual.
+            </p>
+            <ul class="link-list">
+                <li>
+                    <i class="fas fa-file-pdf"></i>
+                    <a itemprop="url"
+                       href="https://github.com/david-campos/app4refs/raw/master/documentation_28_07_2018.pdf">Original
+                        PDF</a>
+                </li>
+            </ul>
+        </div>
         <div class="project" itemscope itemtype="https://schema.org/DigitalDocument">
             <link itemprop="author" rel="author" href="https://david-campos.github.io">
             <div class="project-header">
@@ -603,113 +751,6 @@
                 </li>
             </ul>
         </div>
-    </section>
-    <section id="projects">
-        <h2>
-            <i class="material-icons">bookmarks</i>
-            Non-scholar Projects
-        </h2>
-        <p>There are also some projects I developed which are not school-related. I collect here some of those
-            which are publicly accessible.</p>
-        <h3>Games</h3>
-        <div class="project-header">
-            <a href="https://davidingenieria.wordpress.com/2019/11/29/infinite-runner/#more-440"
-               title="Jumpy Fox blog post" class="title">
-                Jumpy Fox (infinite runner)</a>
-            <div class="project-tags">
-                <span>Unity (C#)</span>
-                <span>Procedural Generation</span>
-                <span>Achievements</span>
-            </div>
-        </div>
-        <p>Small game I made in a weekend to experiment a bit with procedural
-            generation making an infinite runner in Unity. All the elements in the game are randomly generated,
-            as well as the floor height, and it has a considerable amount of achievements for the players.
-            It is also published in the
-            <a href="https://play.google.com/store/apps/details?id=com.DavidCamposRodriguez.JumpyFox"
-               title="The game in the Google PlayStore">Google Playstore</a>.
-        </p>
-        <ul class="link-list">
-            <li>
-                <i class="fab fa-google-play"></i>
-                <a href="https://play.google.com/store/apps/details?id=com.DavidCamposRodriguez.JumpyFox">Get It on
-                    Google Play-Store</a>
-            </li>
-        </ul>
-        <div class="videos">
-            <iframe class="video" src="https://www.youtube.com/embed/cJcY39Nnxk0" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-        </div>
-        <div class="project-header">
-            <a href="orbitz/" title="Orbitz" class="title">Orbitz</a>
-            <div class="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>canvas</span>
-            </div>
-        </div>
-        <p>Small web game based on canvas that I developed during the free time in a week during my first
-            year of bachelor which turned out to be quite funny to play with friends. With the help of Paco Martínez
-            Lasaca I improved it slightly and added a main menu during my fourth year.</p>
-        <h3>Apps</h3>
-        <div class="project-header">
-            <a href="https://www.tournride.com/" title="Tournride" class="title">Tournride internal system</a>
-            <div class="project-tags">
-                <span>Angular (TypeScript)</span>
-                <span>ApiPlatform (Symfony, PHP)</span>
-                <span>Payment System</span>
-                <span>Logistics</span>
-            </div>
-        </div>
-        <p>During my work at Nedaware SL I developed both the front-end and back-end of the internal management
-            system for Tournride, a bike-rental company for the camino to Santiago. The administration part,
-            which was probably the bulk of the work, is sadly not available to the public (the system manages
-            all kinds of processes in the company, estimating the bike transport times, booking cancellations
-            and returns, bike fixing and maintenance, incidences, business analytics, an estimator for external
-            agencies, discounts, etc).
-        <p>However, part of this internal system is embedded inside the public web-page of Tournride. This part is a
-            PWA in Angular which we incrusted in the already-existent WordPress, and it is the part you can
-            see during the process of making a booking or when you log in as a client. </p>
-        <div class="videos">
-            <iframe class="video" src="https://www.youtube.com/embed/eJEl8GN0dm8" frameborder="0"
-                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-            </iframe>
-        </div>
-        <div class="project-header">
-            <a href="https://www.gohu.es/" title="About Gohu (spanish webpage)" class="title">Gohu</a>
-            <div class="project-tags">
-                <span>Angular (TypeScript)</span>
-                <span>PWA</span>
-            </div>
-        </div>
-        <p>Gohu is a Spanish app that allows people to centralise their postal mail into their phone. It allows
-            companies
-            to match the clients for which they already have postal addresses to send messages directly through the app
-            instead of using physical mail, contributing to protecting the environment by saving paper.
-            I participated in this project during my work at Nedaware SL developing the whole front-end and also helping
-            with some parts of the backend.
-        </p>
-        <div class="project-header">
-            <a href="https://app4refs.org/" class="title">App4Refs</a>
-            <div class="project-tags">
-                <span>HTML</span>
-                <span>CSS</span>
-                <span>JavaScript</span>
-                <span>Focus Group</span>
-            </div>
-        </div>
-        <p>Developed in collaboration with the Fundació ACSAR from Barcelona for the University of Santiago de
-            Compostela,
-            initially as my final degree project but continued after it. It was created within the frame of the
-            <a href="https://unintegra.usc.es/" title="UNINTEGRA project web page">UNINTEGRA project</a>
-            and it consisted of a web app to enhance
-            refugees integration in Greece by providing information which may be useful to them (based on data from
-            ONGs and some tests we made on-site with the migrants).
-            Designed by <a href="https://ideami.com/ideami/">Javier Ideami</a>, the application aimed at being as
-            simple as possible and containing as few text as possible in order to make it accessible to a
-            wider range of users.</p>
     </section>
 </main>
 <footer>
