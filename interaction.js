@@ -25,7 +25,6 @@ updateMenuIcons = function () {
         if (scrollPos >= currentTop && scrollPos < bottom) {
             link.i.className = "material-icons";
             link.link.classList.add("current");
-            window.history.replaceState(null, document.title, `#${link.refs.id}`);
         } else {
             link.i.className = "material-icons-outlined";
             link.link.classList.remove("current");
