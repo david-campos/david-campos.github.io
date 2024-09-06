@@ -292,8 +292,10 @@ h3 + .project {
 .resume-entry-item > .resume-entry-icon {
     width: 80px;
     height: 80px;
+    object-fit: contain;
     background-color: white;
     border-radius: 5px;
+    padding: 3px;
     flex: 0 0 auto;
 }
 
@@ -306,6 +308,7 @@ h3 + .project {
 .resume-entry-item > .resume-entry-content {
     flex: 1 1 auto;
     margin: 0 1rem;
+    width: 100%;
 }
 
 .resume-entry-item > .resume-entry-content h4,
@@ -314,15 +317,21 @@ h3 + .project {
     margin: 0;
 }
 
+.resume-entry-item > .resume-entry-content > .resume-entry-content-header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .resume-entry-item > .resume-entry-content > .notes {
     font-size: 0.8em;
-    color: #333;
+    color: #222;
     margin: .5rem 0 0;
 }
 
-.resume-entry-item > .resume-entry-dates {
+.resume-entry-item .resume-entry-dates {
     flex: 0 0 auto;
     font-size: 0.8em;
+    color: #333;
 }
 
 
@@ -468,6 +477,12 @@ footer > div {
 
     .content section:not(:last-child) {
         border-bottom: 2px solid #eeeeee;
+    }
+}
+
+@media (max-width: 400px) {
+    .resume-entry-item > .resume-entry-content > .resume-entry-content-header {
+        flex-direction: column;
     }
 }
 
